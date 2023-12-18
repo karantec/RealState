@@ -6,7 +6,7 @@ import OutsideClickHandler from "react-outside-click-handler";
 function Header() {
   const [menuOpened, setMenuOpened] = useState(false);
   const getMenuStyles = (menuOpened) => {
-    if (document.documentElement.clientWidth <= 800) {
+    if (document.documentElement.clientWidth <= 800 ) {
       return { right: !menuOpened && "-100%" };
     }
   };
